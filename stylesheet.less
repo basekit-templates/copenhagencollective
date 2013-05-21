@@ -668,7 +668,7 @@ hr.line.align-right {
 }
 
 .widget.extendednavigation ul li.folder {
-    background-image: image('/copenhagencollective/images/arrow-down.png');
+    background-image: image('/copenhagencollective/images/arrow-down.png')!important;
     background-position: right center;
     background-repeat: no-repeat;
     height: 100%;
@@ -688,17 +688,6 @@ hr.line.align-right {
 
 .widget.extendednavigation ul li span.menu-icon {
     margin-right: 5px;
-}
-
-.widget.extendednavigation ul.align-right li.folder a{
-    
-    background-position: 0px center;
-}
-
-
-.widget.extendednavigation ul.align-right li
-{
-    background-image: none;
 }
 
 .widget.extendednavigation ul li a
@@ -735,6 +724,10 @@ hr.line.align-right {
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
+}
+
+.widget.extendednavigation ul.align-right li.folder {
+    background-position: left center;
 }
 
 
