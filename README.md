@@ -3,6 +3,9 @@ copenhagencollective
 
 BaseKit's Copenhagen Collective Template
 
+Changes - 2013-05-22
++ Onto Develop Branch
+
 
 Changes 2013-05-21 - Fulvia
 + Fixed issues for QA
