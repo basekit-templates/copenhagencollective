@@ -2,6 +2,11 @@
     "name":"Copenhagen Collective",
     "thumbnail":"collective.png",
     "screenshot":"collective.png",
+    "tags": {
+    "en": ["minimal", "dark", "modeling", "modern"],
+    "es": ["minimalista", "oscuro", "glamour", "moderno"],
+    "br": ["minimalista", "escuro", "feminino", "moderno"]
+    },
     "colorSwatches":
     {
         "Swatch 1": {
