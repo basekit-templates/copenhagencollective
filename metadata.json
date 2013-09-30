@@ -3,9 +3,9 @@
     "thumbnail":"collective.png",
     "screenshot":"collective.png",
     "tags": {
-        "en": ["minimal", "dark", "modeling", "modern"],
-        "es": ["minimalista", "oscuro", "glamour", "moderno"],
-        "br": ["minimalista", "escuro", "feminino", "moderno"]
+    "en": ["minimal", "dark", "modeling", "modern", "stylish", "photos", "fashion", "glamorous", "design", "elegant", "sans-serif"],
+    "es": ["minimalista", "oscuro", "glamour", "moderno", "estilo", "fotos", "moda", "glamuroso", "diseño", "elegante", "sans-serif"],
+    "br": ["minimalista", "escuro", "feminino", "moderno", "estilo", "fotos", "moda", "glamoroso", "design", "elegante", "sans-serif"]
     },
     "colorSwatches":
     {
