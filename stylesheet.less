@@ -480,10 +480,12 @@ footer span {
 
 .widget.extendednavigation ul li.folder {
   margin-right: 16px;
-  background-image: image('/images/arrow-down.png');
   background-position: right center;
   background-repeat: no-repeat;
   cursor: pointer;
+  &:after {
+	  border-top-color: @color-swatch5;
+  }
 }
 
 .widget.extendednavigation ul li.folder .text:hover {
@@ -627,7 +629,7 @@ footer span {
 .widget.feature button
 {
   margin: 1em 0;
-  padding: 17px 56px;
+  padding: 7px 25px;
   border: 0;
   font-family: @font-swatch2-font-family;
   font-size: 1.2em;
@@ -756,7 +758,7 @@ footer span {
 .widget.button button
 {
   margin: 1em 0;
-  padding: 17px 56px;
+  padding: 7px 25px;
   border: 0;
   font-family: @font-swatch2-font-family;
   font-size: 1.2em;
@@ -1256,7 +1258,7 @@ hr.line.align-right {
 }
 
 .widget.signupform fieldset button.btn {
-  padding: 17px 56px;
+  padding: 5px 17px 4px;
   border: 0;
   font-family: @font-swatch2-font-family;
   font-size: .9em;
@@ -1264,6 +1266,7 @@ hr.line.align-right {
   background-color: @font-swatch7-background-color;
   color: @font-swatch7-color;
   text-decoration: none;
+  line-height: 31px;
 }
   
 .widget.signupform fieldset button.btn:hover {
@@ -1384,7 +1387,7 @@ hr.line.align-right {
 }
 
 .widget.contactform fieldset button.btn {
-  padding: 17px 45px;
+  padding: 7px 25px;
   border: 0;
   font-family: @font-swatch2-font-family;
   font-size: .9em;
@@ -1455,9 +1458,8 @@ hr.line.align-right {
   padding: 15px 20px 15px 40px;
   margin: 0;
   border: none;
-  background-image: image('/images/twitter.png');
   background-repeat: no-repeat;
-  background-position: 18px;
+  background-position: 10px 13px;
 
   font-family: @font-swatch2-font-family;
   font-size:.9em;
@@ -1469,7 +1471,6 @@ hr.line.align-right {
 
 .widget.tweet a:hover, .tweet a:active {
   padding: 15px 20px 15px 40px;
-  background-image: image('/images/twitter.png');
   background-repeat: no-repeat;
   background-position: 18px;
   cursor: pointer;
@@ -1684,12 +1685,7 @@ hr.line.align-right {
 .widget.responsiveslideshow .slideshow-widget-controls .dot
 {
     border:none;
-    background:transparent image('/images/slideshow-dot-not-selected.png') center no-repeat;
-}
-
-.widget.responsiveslideshow .slideshow-widget-controls .dot.selected
-{
-    background:transparent image('/images/slideshow-dot-selected.png') center no-repeat;
+    border-radius: 100%;
 }
 
 /* ===============================
