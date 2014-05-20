@@ -2,6 +2,7 @@
     "name":"Copenhagen Collective",
     "thumbnail":"collective.png",
     "screenshot":"collective.png",
+    "templateType":"standard",
     "tags": {
     "en": ["minimal", "dark", "modeling", "modern", "stylish", "photos", "fashion", "glamorous", "design", "elegant", "sans-serif"],
     "es": ["minimalista", "oscuro", "glamour", "moderno", "estilo", "fotos", "moda", "glamuroso", "diseño", "elegante", "sans-serif"],
