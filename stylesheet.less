@@ -330,181 +330,93 @@ footer span {
    EXTENDED NAVIGATION
    =============================== */
 
-.main .widget.extendednavigation {
-    max-width: 100%;
-    width: 100%;
-    float: none;
-}
-
-.main .widget.extendednavigation:before,
-.main .widget.extendednavigation:after {
-  content: " ";
-  display: table;
-}
-.main .widget.extendednavigation:after {
-  clear: both;
-}
-.main .widget.extendednavigation {
-  *zoom: 1;
-}
-
-
 .widget.extendednavigation {
-  float: right;
-  position: relative;
-  width: 70%;
+    float: right;
+    max-width: 600px;
+    @media (max-width: 915px) {
+        max-width: 100%;
+    }
 }
 
-.widget.extendednavigation a.pull {
-  display: none;
+.extendednavigation li.selected {
+    a, .text {
+        color: lighten(@color-swatch2,20%);
+    }
 }
 
-.widget.extendednavigation ul {
-  margin: 0;
-  padding: 30px 0;
-}
-
-/* ALIGNMENTS */
-
-.widget.extendednavigation ul.align-center li, .widget.extendednavigation ul.align-center li:hover ul li {
-  text-align: center;
-}
-
-.widget.extendednavigation ul.align-left li, .widget.extendednavigation ul.align-left li:hover ul li
-{
-  text-align: left;
-}
-
-.widget.extendednavigation ul.align-right li, .widget.extendednavigation ul.align-right li:hover ul li
-{
-  text-align: right;
-}
-
-.widget.extendednavigation ul li {
-  float: left;
-  display: block;
-  text-align: left!important;
-}
-
-.widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
-  display: block;
-  padding: 18px 25px;
-  font-family:@font-swatch6-font-family;
-  font-size:@font-swatch6-font-size;
-  font-weight: @font-swatch6-font-weight;
-  color: lighten(@font-swatch6-color, 50%);
-  line-height:@font-swatch6-line-height;
-  letter-spacing: @font-swatch6-letter-spacing;
-}
-
-.widget.extendednavigation ul li a:hover {
-  text-decoration: none;
-  color: @font-swatch6-color-hover;
-}
-
-/* SELECTED */
-
-.widget.extendednavigation ul li.selected {
-  background-color: @color-swatch3;
-
-}
-
-.widget.extendednavigation ul li.selected:hover { 
-
-}
-
-/* FOLDER */
-
-.widget.extendednavigation ul li.folder {
-  margin-right: 16px;
-  background-position: right center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  &:after {
-	  border-top-color: @color-swatch5;
-  }
-}
-
-.widget.extendednavigation ul li.folder .text:hover {
-  color: @font-swatch6-color-hover;
-}
-
-/* DROPDOWN MENU */
-
-.widget.extendednavigation li > ul {
-  display: none;
-}
-
-.widget.extendednavigation li:hover > ul {
-  display: block;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  background-color: @color-swatch7;
-  border-top: 1px solid lighten(@color-swatch7,8%);
-  z-index: 500;
-  padding: 20px 0;
-}
-
-.widget.extendednavigation li:hover > ul > li {
-  display: block;
-  width: 100%;
-  text-align: left!important;
-  padding: 0 30px 0;
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */
-}
-
-.widget.extendednavigation li:hover > ul li:first-child {
-}
-
-.widget.extendednavigation li:hover > ul li:hover {
-
-}
-
-.widget.extendednavigation li:hover > ul > li > a {
-  display: block;
-  background-image: none;
-  color: @color-swatch7;
-  padding: 0;
-}
-
-
-.widget.extendednavigation ul li:hover > ul li .text {
-  padding: 0 0 0 16px;
-  background-image: image('/images/arrow-left.png');
-  background-position: left center;
-  background-repeat: no-repeat;
-}
-
-.widget.extendednavigation li:hover > ul > li > a {
-
-}
-
-.widget.extendednavigation li:hover > ul li .text:hover {
-  color: @font-swatch6-color-hover;
-}
-
-
-/* EXTENDED NAVIGATION - INSIDE ZONE */
-
-.main .widget.extendednavigation {
-    max-width: 100%;
-    width: 100%;
-    float: none;
-}
-
-.main .widget.extendednavigation:before,
-.main .widget.extendednavigation:after {
-  content: " ";
-  display: table;
-}
-.main .widget.extendednavigation:after {
-  clear: both;
-}
-.main .widget.extendednavigation {
-  *zoom: 1;
+.widget {
+    &.extendednavigation {
+        float: right;
+        .clearfix;
+        @media @tablet {
+            float: none;
+        }
+        ul {    
+            margin: 15px 0;
+            @media @tablet {
+                padding: 0;
+                margin-bottom: 0;
+            }
+            li {
+                // Folder 
+                &.folder {
+                    margin-right: 16px;
+                    cursor: pointer;
+                    .text {
+                        -webkit-font-smoothing: initial;
+                    }
+                }
+                @media @tablet {
+                    border-bottom: 1px solid lighten(@color-swatch5,20%);
+                    &:first-child {
+                        border-top: 1px solid lighten(@color-swatch5,20%);
+                    }
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+                // Dropdown Menu
+                &:hover {
+                    ul {
+                        background-color: @color-swatch7;
+                        padding: 30px 0 20px;
+                        @media @tablet {
+                            padding: 0;
+                        }
+                        li {
+                            width: 100%;
+                            padding: 4px 22px;
+                            @media @tablet {
+                                padding: 10px 22px;
+                                border-bottom: 0;
+                            }
+                            a {
+                                padding: 0;
+                            }
+                            .text {
+                                &:hover {
+                                    color: @color-swatch3;
+                                }
+                            }
+                        }
+                    }
+                }
+                a {
+                    -webkit-font-smoothing: initial;
+                    &:hover {
+                        color: @color-swatch3;
+                    }
+                }
+            }
+        }
+        a.pull {
+            top: 21px;
+            &:after {
+                background-color: @color-swatch3;
+                box-shadow: 0 6px 0 darken(@color-swatch3,10%), 0 12px 0 darken(@color-swatch3,15%);
+            }
+        }
+    }
 }
 
 /* ===============================
