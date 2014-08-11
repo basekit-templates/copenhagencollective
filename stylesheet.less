@@ -83,11 +83,11 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    =============================== */
 
 header.bk-header {
-    padding: 25px 0 15px;
+    padding: 15px 0;
     background-color: @color-swatch7;
     .wrapper {
-      padding-bottom: 5px;
-      padding-top: 5px;
+      padding-bottom: 0;
+      padding-top: 0;
     }
 }
 
@@ -96,7 +96,9 @@ header.bk-header {
     float: left;
     width: 30%;
     @media @tablet {
-        width: 100%;
+      margin-top: 5px;
+      min-height: 30px;
+      width: 100%;
     }
 }
 
@@ -173,13 +175,13 @@ footer.bk-footer p {
 }
 
 .widget.extendednavigation a.pull {
-  top: 6px;
+  top: 16px;
 }
 
 .widget.extendednavigation ul {
     @media @tablet {
         float: left;
-        margin-top: 50px;
+        margin-top: 30px;
     }
 }
 
