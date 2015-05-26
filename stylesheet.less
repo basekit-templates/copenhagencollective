@@ -609,6 +609,7 @@ button.btn,
     float: left;
     position: relative;
     width: 33.3%;
+    margin-bottom: 10px;
     padding-bottom: 33%;
 }
 
@@ -638,8 +639,7 @@ button.btn,
     position: absolute;
     left: 5px;
     right: 5px;
-    top: 0px;
-    bottom: 16px;
+    bottom: 0px;
     overflow: hidden;
 }
 
@@ -663,12 +663,6 @@ button.btn,
 
 .widget.gallery li span.inner .title,
 .widget.gallery li span.inner .description {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: -310px;
-    max-height: 284px;
     background: @color-swatch1;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px;
@@ -686,12 +680,11 @@ button.btn,
 
 }
 
-.widget.gallery li span.inner:hover .title {
-    margin-bottom: 0
-}
-
-.widget.gallery li span.inner .description {
-    display: none
+.widget.gallery .inner:hover .image-data {
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  height: auto;
 }
 
 .widget.gallery li span.inner a {
