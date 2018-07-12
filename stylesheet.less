@@ -96,6 +96,7 @@ header.bk-header {
     float: left;
     width: 30%;
     @media @tablet {
+      float: none;
       margin-top: 5px;
       min-height: 30px;
       width: 100%;
@@ -175,14 +176,10 @@ footer.bk-footer p {
     }
 }
 
-.widget.extendednavigation a.pull {
-  top: 16px;
-}
-
 .widget.extendednavigation ul {
     @media @tablet {
-        float: left;
-        margin-top: 30px;
+      position: relative;
+      top: 20px;
     }
 }
 
@@ -1880,17 +1877,22 @@ footer.bk-footer .footer.bk-footer2 .widget.profile form {
 
   /* NAV */
 
-.widget .extendednavigation ul {
-    border-top: 1px solid @color-swatch2;
-    padding-top: 0;
-}
+  .widget .extendednavigation ul {
+      border-top: 1px solid @color-swatch2;
+      margin-bottom: 20px;
+      padding-top: 0;
+  }
 
-.widget .extendednavigation ul.align-right li.folder {
-    background-position: left center;
-    &:after {
-        right: inherit;
-    }
-}
+  .widget .extendednavigation ul.align-right li.folder {
+      background-position: left center;
+      &:after {
+          right: inherit;
+      }
+  }
+
+  .widget .extendednavigation li.folder ul {
+    top: 48px;
+  }
 
   .widget.extendednavigation ul li {
       border-bottom: 1px solid @color-swatch2;
@@ -1902,10 +1904,6 @@ footer.bk-footer .footer.bk-footer2 .widget.profile form {
 
   .widget.extendednavigation ul li:hover .text {
     color: @color-swatch3;
-  }
-
-  .widget.extendednavigation ul li:hover {
-    border-bottom: 1px solid @color-swatch2;
   }
 
   .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
@@ -1942,6 +1940,15 @@ footer.bk-footer .footer.bk-footer2 .widget.profile form {
 
   .widget.extendednavigation ul li:hover > ul li:first-child {
     border-top: none;
+  }
+
+  .widget .extendednavigation a.pull,
+  .widget .navigation a.pull {
+    top: -38px;
+
+    &:after {
+      top: 20px;
+    }
   }
 
   .widget.feature .feature-bgimg .content button {
