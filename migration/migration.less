@@ -1,0 +1,28 @@
+.empty-zone,
+#page-zones__main:empty,
+.canvas,
+#page-zones__main > .widget:not(.row),
+.row:not(.widget):not(.row--width-no-padding) .row__container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    @media @tablet {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+
+// Move spacing to first widget in the main zone (not sections)
+.edit #page-zones__main-overlay + .widget:not(.row),
+#page-zones__main > .widget:not(.row):first-child {
+    margin-top: 30px;
+}
+
+// Move spacing to last widget in the main zone (not sections)
+#page-zones__main > .widget:not(.row):last-child {
+    margin-bottom: 30px;
+}
