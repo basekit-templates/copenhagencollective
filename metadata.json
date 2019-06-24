@@ -3,6 +3,7 @@
     "thumbnail":"collective.png",
     "screenshot":"copenhagen-screenshot.jpg",
     "templateType":"standard",
+    "versionTenCompatible": 1,
     "tags": {
     "en": ["minimal", "dark", "modeling", "modern", "stylish", "photos", "fashion", "glamorous", "design", "elegant", "sans-serif"],
     "es": ["minimalista", "oscuro", "glamour", "moderno", "estilo", "fotos", "moda", "glamuroso", "diseño", "elegante", "sans-serif"],
